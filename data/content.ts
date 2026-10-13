@@ -13,7 +13,7 @@ export const profile = {
     email: "seu@email.com",
     whatsapp: "5500000000000", // só números, com DDI e DDD
     linkedin: "https://www.linkedin.com/in/seu-perfil",
-    github: "https://github.com/seu-usuario",
+    github: "https://github.com/vGustav1",
   },
   facts: [
     { k: { pt: "Curso", en: "Degree" }, v: { pt: "Engenharia de Software", en: "Software Engineering" } },
@@ -105,7 +105,7 @@ export const projects: Project[] = [
       en: "One-page site with an animated city, a skills solar system, live API data and deployment on Vercel.",
     },
     tech: ["Next.js", "TypeScript", "EmailJS"],
-    repo: "https://github.com/seu-usuario/portfolio",
+    repo: "https://github.com/vGustav1/portfolio",
   },
 ];
 

@@ -38,7 +38,7 @@ Projeto desenvolvido para o **Laboratório 01 — Portfólio Profissional** da d
 
 - **Site publicado:** [https://SEU-PROJETO.vercel.app](https://SEU-PROJETO.vercel.app) <!-- atualizar após o deploy -->
 - **Wireframes (Figma):** [link do Figma](https://www.figma.com/) <!-- atualizar -->
-- **Repositório:** [github.com/SEU-USUARIO/portfolio](https://github.com/SEU-USUARIO/portfolio)
+- **Repositório:** [github.com/vGustav1/portfolio](https://github.com/vGustav1/portfolio)
 
 ## Sobre o Projeto
 
@@ -143,7 +143,7 @@ No painel da Vercel, em **Settings → Environment Variables**, cadastre as mesm
 ### Instalação de Dependências
 
 ```bash
-git clone https://github.com/SEU-USUARIO/portfolio.git
+git clone https://github.com/vGustav1/portfolio.git
 cd portfolio
 npm install
 ```
@@ -267,7 +267,7 @@ Não implementados nesta versão.
 
 | Foto | Nome | GitHub | LinkedIn | E-mail |
 | --- | --- | --- | --- | --- |
-| <!-- foto --> | Gustavo Vieira | [@SEU-USUARIO](https://github.com/SEU-USUARIO) | [LinkedIn](https://www.linkedin.com/in/seu-perfil) | seu@email.com |
+| <!-- foto --> | Gustavo Vieira | [@vGustav1](https://github.com/vGustav1) | [LinkedIn](https://www.linkedin.com/in/seu-perfil) | seu@email.com |
 
 ## Contribuição
 
