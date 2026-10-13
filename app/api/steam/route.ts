@@ -14,7 +14,7 @@ export async function GET() {
     if (!res.ok) throw new Error(String(res.status));
     const json = await res.json();
     const games: { appid: number; name: string; playtime_forever: number }[] = json.response?.games ?? [];
-    const top = games.sort((a, b) => b.playtime_forever - a.playtime_forever).slice(0, 3);
+    const top = games.sort((a, b) => b.playtime_forever - a.playtime_forever).slice(0, 6);
     if (top.length === 0) throw new Error("vazio");
     const data: SteamData = {
       games: top.map((g) => ({

@@ -208,7 +208,7 @@ body { overflow-x: clip; }
 .spotify-info { flex: 1 1 180px; min-width: 0; display: flex; flex-direction: column; gap: 8px; }
 .spotify-info .title { font-family: var(--f-display); font-weight: 900; font-style: italic; text-transform: uppercase; font-size: clamp(30px, 3vw, 48px); line-height: 1; overflow-wrap: anywhere; }
 .spotify-info .artist { font-size: 18px; color: var(--soft); }
-.steam-games { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 20px; }
+.steam-games { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 200px), 1fr)); gap: 20px; }
 .steam-game { display: flex; flex-direction: column; gap: 10px; }
 .steam-game .ph { width: 100%; aspect-ratio: 460 / 215; }
 .steam-game .name { font-weight: 700; font-size: 17px; }
