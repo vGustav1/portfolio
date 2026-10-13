@@ -25,6 +25,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         <LanguageProvider>{children}</LanguageProvider>
+        {/* Efeito VHS sutil por cima de tudo (não bloqueia cliques) */}
+        <div className="vhs" aria-hidden="true"><span className="vhs-band" /></div>
       </body>
     </html>
   );

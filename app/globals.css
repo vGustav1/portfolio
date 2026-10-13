@@ -251,3 +251,23 @@ textarea.input { resize: vertical; }
 
 /* ---------- footer ---------- */
 .footer { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; padding: 28px clamp(16px, 6vw, 120px); border-top: 1px solid var(--line); margin-top: 72px; }
+
+/* ---------- efeito VHS (sutil) ---------- */
+/* Linhas de varredura bem fracas + uma faixa de "tracking" que desce devagar + leve escurecimento nas bordas.
+   Para desligar: apague o <div className="vhs"> em app/layout.tsx. Para ajustar a força: mude as opacidades abaixo. */
+.vhs { position: fixed; inset: 0; z-index: 90; pointer-events: none; overflow: hidden;
+  background:
+    repeating-linear-gradient(180deg, rgba(0, 0, 0, 0.16) 0px, rgba(0, 0, 0, 0.16) 1px, transparent 1px, transparent 3px),
+    radial-gradient(ellipse at center, transparent 62%, rgba(0, 0, 0, 0.35) 100%);
+  animation: vhs-flicker 6s steps(1) infinite;
+}
+.vhs-band { position: absolute; left: 0; right: 0; height: 90px; top: -120px;
+  background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.035) 40%, rgba(46, 242, 255, 0.045) 50%, rgba(255, 46, 136, 0.035) 60%, transparent);
+  animation: vhs-roll 9s linear infinite;
+}
+@keyframes vhs-roll { to { transform: translateY(calc(100vh + 240px)); } }
+@keyframes vhs-flicker { 0%, 100% { opacity: 1; } 47% { opacity: 0.92; } 48% { opacity: 1; } 83% { opacity: 0.95; } 84% { opacity: 1; } }
+/* leve separação de cor nos títulos, como fita gasta */
+.neon { text-shadow: none; }
+.section-head h2.neon, .hero h1.neon { filter: drop-shadow(-3px 2px 0 var(--cyan)) drop-shadow(2px 0 0 rgba(255, 46, 136, 0.55)) drop-shadow(6px 6px 0 #1a0030); }
+@media (prefers-reduced-motion: reduce) { .vhs, .vhs-band { animation: none; } .vhs-band { display: none; } }
