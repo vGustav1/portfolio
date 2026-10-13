@@ -36,7 +36,17 @@ export default function Contact() {
       await emailjs.send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID ?? "",
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID ?? "",
-        { from_name: form.name, reply_to: form.email, message: form.message },
+        {
+          // nomes do template padrão do EmailJS ("Contact Us")
+          name: form.name,
+          email: form.email,
+          title: "Portfólio",
+          time: new Date().toLocaleString("pt-BR", { timeZone: "America/Sao_Paulo" }),
+          message: form.message,
+          // aliases, caso o template use estes nomes
+          from_name: form.name,
+          reply_to: form.email,
+        },
         { publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY ?? "" },
       );
       setStatus("ok");
