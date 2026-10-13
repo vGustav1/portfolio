@@ -25,6 +25,11 @@ export default function Hobbies() {
   const steam = useApi<SteamData>("/api/steam");
   const lol = useApi<LolData>("/api/lol");
   const chess = useApi<ChessData>("/api/chess");
+  const igdb = useApi<{ games: { name: string; cover?: string; genre?: string; year?: number }[] }>("/api/igdb");
+  const games = favoriteGames.map((g, i) => {
+    const hit = igdb?.games?.[i];
+    return { name: hit?.name ?? g.name, cover: hit?.cover ?? g.cover, genre: hit?.genre ? `${hit.genre}${hit.year ? ` · ${hit.year}` : ""}` : t(g.genre) };
+  });
   const resLabel = (r: string) => (lang === "pt" ? ({ W: "V", L: "D", D: "E" } as Record<string, string>)[r] ?? r : r);
   const maxHours = Math.max(1, ...(steam?.games.map((g) => g.hours) ?? [1]));
 
@@ -104,11 +109,11 @@ export default function Hobbies() {
       <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
         <span className="label">{t(ui.hobbies.favorites)}</span>
         <div className="games">
-          {favoriteGames.map((g) => (
-            <article key={g.name}>
-              <div className="ph" style={{ aspectRatio: "3 / 4" }}>{g.cover ? <img src={g.cover} alt={g.name} /> : "[ capa do jogo ]"}</div>
+          {games.map((g, i) => (
+            <article key={i}>
+              <div className="ph" style={{ aspectRatio: "3 / 4" }}>{g.cover ? <img src={g.cover} alt={g.name} loading="lazy" /> : "[ capa do jogo ]"}</div>
               <span style={{ fontWeight: 700, fontSize: 15 }}>{g.name}</span>
-              <span className="lbl">{t(g.genre)}</span>
+              <span className="lbl">{g.genre}</span>
             </article>
           ))}
         </div>
