@@ -61,6 +61,7 @@ export const ui = {
   },
   hobbies: {
     sub: { pt: "O que eu jogo, ouço e treino, com dados ao vivo.", en: "What I play, listen to and practice, with live data." },
+    listen: { pt: "Ouvir no Spotify", en: "Listen on Spotify" },
     nowPlaying: { pt: "► OUVINDO AGORA", en: "► NOW PLAYING" },
     lastPlayed: { pt: "OUVIDO POR ÚLTIMO", en: "LAST PLAYED" },
     mostPlayed: { pt: "MAIS JOGADOS", en: "MOST PLAYED" },

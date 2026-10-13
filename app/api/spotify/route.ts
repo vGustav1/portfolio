@@ -27,7 +27,7 @@ const toData = (track: Track, isPlaying: boolean): SpotifyData => ({
   isPlaying,
   title: track.name,
   artist: track.artists.map((a) => a.name).join(", "),
-  cover: track.album.images.at(-1)?.url,
+  cover: track.album.images[0]?.url, // a maior (640px)
   url: track.external_urls.spotify,
 });
 
