@@ -14,6 +14,7 @@ export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [tried, setTried] = useState(false);
   const [status, setStatus] = useState<Status>("idle");
+  const [errInfo, setErrInfo] = useState("");
 
   const errors = {
     name: !form.name.trim(),
@@ -52,7 +53,11 @@ export default function Contact() {
       setStatus("ok");
       setForm({ name: "", email: "", message: "" });
       setTried(false);
-    } catch {
+    } catch (err) {
+      const e = err as { status?: number; text?: string };
+      const info = e?.text ? `${e.status ?? ""} ${e.text}`.trim() : String(err);
+      console.error("EmailJS:", err);
+      setErrInfo(info);
       setStatus("fail");
     }
   }
@@ -110,7 +115,12 @@ export default function Contact() {
           </div>
           <div aria-live="polite">
             {status === "ok" && <p className="status">{t(ui.contact.ok)}</p>}
-            {status === "fail" && <p className="status fail">{t(ui.contact.fail)}</p>}
+            {status === "fail" && (
+              <p className="status fail">
+                {t(ui.contact.fail)}
+                {errInfo && <><br /><small style={{ opacity: 0.7 }}>({errInfo})</small></>}
+              </p>
+            )}
           </div>
         </form>
       </div>
