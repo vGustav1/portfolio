@@ -129,8 +129,8 @@ export const experiences: Experience[] = [
 
 /** Jogos favoritos (seção Hobbies). Capas em /public/jogos/. */
 export const favoriteGames: { name: string; cover?: string; genre: Bi }[] = [
-  { name: "[Jogo favorito 1]", genre: { pt: "[Gênero]", en: "[Genre]" } },
-  { name: "[Jogo favorito 2]", genre: { pt: "[Gênero]", en: "[Genre]" } },
-  { name: "[Jogo favorito 3]", genre: { pt: "[Gênero]", en: "[Genre]" } },
-  { name: "[Jogo favorito 4]", genre: { pt: "[Gênero]", en: "[Genre]" } },
+  { name: "Hotline Miami", genre: { pt: "Ação", en: "Action" } },
+  { name: "Balatro", genre: { pt: "Roguelike de cartas", en: "Card roguelike" } },
+  { name: "Grand Theft Auto IV", genre: { pt: "Ação · mundo aberto", en: "Action · open world" } },
+  { name: "Shadow of the Colossus", genre: { pt: "Aventura", en: "Adventure" } },
 ];
