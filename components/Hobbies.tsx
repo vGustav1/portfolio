@@ -28,7 +28,7 @@ export default function Hobbies() {
   const igdb = useApi<{ games: { name: string; cover?: string; genre?: string; year?: number }[] }>("/api/igdb");
   const games = favoriteGames.map((g, i) => {
     const hit = igdb?.games?.[i];
-    return { name: hit?.name ?? g.name, cover: hit?.cover ?? g.cover, genre: hit?.genre ? `${hit.genre}${hit.year ? ` · ${hit.year}` : ""}` : t(g.genre) };
+    return { name: g.name, cover: hit?.cover ?? g.cover, genre: t(g.genre) }; // gênero vem do content.ts (o da IGDB vem em inglês e às vezes errado)
   });
   const resLabel = (r: string) => (lang === "pt" ? ({ W: "V", L: "D", D: "E" } as Record<string, string>)[r] ?? r : r);
   const maxHours = Math.max(1, ...(steam?.games.map((g) => g.hours) ?? [1]));
