@@ -9,6 +9,8 @@ export type Bi = { pt: string; en: string };
 
 export const profile = {
   name: "Gustavo Vieira",
+  /** Sua foto: coloque o arquivo em public/ e escreva o caminho, ex.: "/foto.jpg". Vazio = placeholder. */
+  photo: "",
   links: {
     email: "seu@email.com",
     whatsapp: "5500000000000", // só números, com DDI e DDD

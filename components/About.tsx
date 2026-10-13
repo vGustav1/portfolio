@@ -15,7 +15,9 @@ export default function About() {
       </div>
       <div className="about-grid">
         <aside className="card about-card" aria-label={t(ui.about.summary)}>
-          <div className="about-photo">{t(ui.about.photo)}</div>
+          <div className="about-photo">
+            {profile.photo ? <img src={profile.photo} alt={profile.name} /> : t(ui.about.photo)}
+          </div>
           {profile.facts.map((f) => (
             <div className="fact" key={f.k.pt}>
               <span className="lbl">{t(f.k).toUpperCase()}</span>
