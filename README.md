@@ -8,7 +8,7 @@ Laboratório 01 · Desenvolvimento e Integração de Aplicações Web (DIAW) · 
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=fff)
 ![Vercel](https://img.shields.io/badge/deploy-Vercel-000000?logo=vercel)
 
-🔗 **Site:** https://SEU-PROJETO.vercel.app <!-- atualizar após o deploy -->
+🔗 **Site:** https://portfolio-gus-corp1.vercel.app
 
 ## Sobre o projeto
 
