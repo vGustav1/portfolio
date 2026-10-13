@@ -1,22 +1,11 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import { projects } from "@/data/content";
 import { ui, useLang } from "@/lib/i18n";
 import { Monitor } from "./LowPoly";
 
-type Repo = { name: string; full_name: string; html_url: string; description: string | null; language: string | null; stargazers_count: number };
-
 export default function Projects() {
   const { t } = useLang();
-  const [repos, setRepos] = useState<Repo[]>([]);
-
-  useEffect(() => {
-    fetch("/api/github")
-      .then((r) => (r.ok ? r.json() : { repos: [] }))
-      .then((d) => setRepos(d.repos ?? []))
-      .catch(() => setRepos([]));
-  }, []);
 
   return (
     <section id="projetos" className="container section">
@@ -66,20 +55,6 @@ export default function Projects() {
         })}
       </div>
 
-      {repos.length > 0 && (
-        <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
-          <span className="label">{t(ui.projects.recent)}</span>
-          <div className="repos">
-            {repos.map((r) => (
-              <a key={r.full_name} className="card repo" href={r.html_url} target="_blank" rel="noopener noreferrer">
-                <span className="repo-name">{r.full_name}</span>
-                <span style={{ fontSize: 14, lineHeight: 1.5, color: "var(--muted)" }}>{r.description ?? t(ui.projects.noDesc)}</span>
-                <span className="lbl">{r.language ?? "—"} · ★ {r.stargazers_count}</span>
-              </a>
-            ))}
-          </div>
-        </div>
-      )}
     </section>
   );
 }

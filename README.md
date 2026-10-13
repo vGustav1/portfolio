@@ -28,7 +28,7 @@ A abertura é uma cidade animada ao pôr do sol. Ao rolar, o conteúdo aparece s
 | Linguagem | TypeScript 5 |
 | Estilo | CSS puro com variáveis |
 | E-mail | EmailJS (`@emailjs/browser`) |
-| APIs | GitHub, Spotify, Steam, Riot Games, Chess.com |
+| APIs | Spotify, Steam, Riot Games, Chess.com, IGDB |
 | Hospedagem | Vercel |
 
 As chaves das APIs ficam no servidor, nas rotas `app/api/*`. Sem chave configurada, cada card mostra dados de exemplo em vez de quebrar.
@@ -53,7 +53,7 @@ As variáveis de ambiente estão explicadas no [`.env.example`](.env.example). N
 
 ```
 app/
-  api/          rotas de servidor (GitHub, Spotify, Steam, LoL, xadrez)
+  api/          rotas de servidor (Spotify, Steam, LoL, xadrez, IGDB)
   layout.tsx    HTML base e fontes
   page.tsx      página única
   globals.css   identidade visual
