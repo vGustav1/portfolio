@@ -31,9 +31,13 @@ export default function About() {
               <p key={i}>{t(p)}</p>
             ))}
           </div>
-          <div className="edu">
-            <span>{t(profile.education.title)}</span>
-            <span className="lbl" style={{ fontSize: 15 }}>{t(profile.education.when)}</span>
+          <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+            {profile.education.map((e) => (
+              <div className="edu" key={e.title.pt}>
+                <span>{t(e.title)}</span>
+                <span className="lbl" style={{ fontSize: 15 }}>{t(e.when)}</span>
+              </div>
+            ))}
           </div>
         </div>
       </div>

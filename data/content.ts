@@ -6,35 +6,31 @@ export const profile = {
 
   photo: "",
   links: {
-    email: "seu@email.com",
-    whatsapp: "5500000000000",
-    linkedin: "https://www.linkedin.com/in/seu-perfil",
+    email: "gustavofvieira5@gmail.com",
+    whatsapp: "5531989575955",
+    linkedin: "https://www.linkedin.com/in/gustavovieira21",
     github: "https://github.com/vGustav1",
   },
   facts: [
     { k: { pt: "Curso", en: "Degree" }, v: { pt: "Engenharia de Software", en: "Software Engineering" } },
     { k: { pt: "Período", en: "Semester" }, v: { pt: "2º", en: "2nd" } },
     { k: { pt: "Instituição", en: "University" }, v: { pt: "PUC Minas", en: "PUC Minas" } },
-    { k: { pt: "Disponibilidade", en: "Availability" }, v: { pt: "[Aberto a estágio]", en: "[Open to internships]" } },
+    { k: { pt: "Disponibilidade", en: "Availability" }, v: { pt: "Aberto a estágio", en: "Open to internships" } },
   ],
   about: [
     {
-      pt: "Sou estudante do 2º período de Engenharia de Software na PUC Minas. [Complete com sua área de atuação.]",
-      en: "I am a 2nd-semester Software Engineering student at PUC Minas. [Add your field of work.]",
+      pt: "Sou formado em Análise e Desenvolvimento de Sistemas pela UniBH (2023–2025) e atualmente curso Engenharia de Software na PUC Minas.",
+      en: "I hold a degree in Systems Analysis and Development from UniBH (2023–2025) and I am currently studying Software Engineering at PUC Minas.",
     },
     {
-      pt: "Gosto de desenvolvimento web e de jogos, e procuro unir os dois nos meus projetos. [Seus outros interesses.]",
-      en: "I enjoy web development and games, and I try to bring both together in my projects. [Your other interests.]",
-    },
-    {
-      pt: "Meu objetivo é [seu objetivo profissional, por exemplo: conseguir o primeiro estágio em desenvolvimento].",
-      en: "My goal is [your professional goal, for example: landing my first development internship].",
+      pt: "Meu objetivo é conseguir meu primeiro estágio como desenvolvedor full stack e continuar evoluindo na criação de aplicações completas, do back-end ao front-end.",
+      en: "My goal is to land my first internship as a full stack developer and keep growing in building complete applications, from back-end to front-end.",
     },
   ] as Bi[],
-  education: {
-    title: { pt: "Engenharia de Software · PUC Minas", en: "Software Engineering · PUC Minas" },
-    when: { pt: "[início] — [previsão de conclusão]", en: "[start] — [expected graduation]" },
-  },
+  education: [
+    { title: { pt: "Engenharia de Software · PUC Minas", en: "Software Engineering · PUC Minas" }, when: { pt: "2026 — 2030", en: "2026 — 2030" } },
+    { title: { pt: "Análise e Desenvolvimento de Sistemas · UniBH", en: "Systems Analysis and Development · UniBH" }, when: { pt: "2023 — 2025", en: "2023 — 2025" } },
+  ],
 };
 
 export type Skill = {
@@ -111,9 +107,16 @@ export type Experience = {
 };
 
 export const experiences: Experience[] = [
-  { type: "aca", when: { pt: "[semestre ano]", en: "[semester year]" }, role: { pt: "[Projeto em equipe]", en: "[Team project]" }, org: { pt: "PUC Minas", en: "PUC Minas" }, description: { pt: "[Disciplina, seu papel e o que foi entregue.]", en: "[Course, your role and what was delivered.]" } },
-  { type: "evt", when: { pt: "[mês ano]", en: "[month year]" }, role: { pt: "[Hackathon, palestra...]", en: "[Hackathon, talk...]" }, org: { pt: "[Nome do evento]", en: "[Event name]" }, description: { pt: "[O que você construiu ou aprendeu.]", en: "[What you built or learned.]" } },
-  { type: "pro", when: { pt: "[mês ano] — [atual]", en: "[month year] — [present]" }, role: { pt: "[Cargo ou atividade]", en: "[Role or activity]" }, org: { pt: "[Empresa ou cliente]", en: "[Company or client]" }, description: { pt: "[O que você fez e o resultado.]", en: "[What you did and the result.]" } },
+  {
+    type: "evt",
+    when: { pt: "2026", en: "2026" },
+    role: { pt: "Voluntário", en: "Volunteer" },
+    org: { pt: "We Make Software · PUC Minas", en: "We Make Software · PUC Minas" },
+    description: {
+      pt: "Atuei como voluntário no evento, auxiliando as bancas das empresas parceiras presentes.",
+      en: "I volunteered at the event, assisting the booths of the partner companies attending.",
+    },
+  },
 ];
 
 export const favoriteGames: { name: string; cover?: string; genre: Bi }[] = [

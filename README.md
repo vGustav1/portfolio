@@ -73,6 +73,6 @@ public/         imagens e GIFs
 
 ## Autor
 
-**Gustavo Vieira** · [GitHub](https://github.com/vGustav1) · [LinkedIn](https://www.linkedin.com/in/seu-perfil)
+**Gustavo Vieira** · [GitHub](https://github.com/vGustav1) · [LinkedIn](https://www.linkedin.com/in/gustavovieira21)
 
 Licença MIT.
