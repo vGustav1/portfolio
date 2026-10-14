@@ -146,9 +146,10 @@ export const experiences: Experience[] = [
   },
 ];
 
-export const favoriteGames: { name: string; cover?: string; genre: Bi }[] = [
-  { name: "Hotline Miami", genre: { pt: "Ação", en: "Action" } },
-  { name: "Balatro", genre: { pt: "Roguelike de cartas", en: "Card roguelike" } },
-  { name: "Grand Theft Auto IV", genre: { pt: "Ação · mundo aberto", en: "Action · open world" } },
-  { name: "Shadow of the Colossus", genre: { pt: "Aventura", en: "Adventure" } },
+export const favoriteGames: { name: string; cover?: string }[] = [
+  { name: "Hotline Miami" },
+  { name: "Balatro" },
+  { name: "Grand Theft Auto IV" },
+  { name: "Shadow of the Colossus" },
+  { name: "Minecraft" },
 ];

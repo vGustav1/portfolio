@@ -196,7 +196,7 @@ body { overflow-x: clip; }
 .ratings { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
 .rating { display: flex; flex-direction: column; gap: 2px; padding: 12px; border: 1px solid rgba(46, 242, 255, 0.5); }
 .rating b { font-family: var(--f-display); font-weight: 900; font-style: italic; font-size: 30px; }
-.games { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 260px)); gap: 22px; }
+.games { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 22px; }
 @media (max-width: 600px) { .games { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; } }
 .games article { display: flex; flex-direction: column; gap: 8px; }
 .note { font-family: var(--f-mono); font-size: 12px; color: var(--muted); opacity: 0.8; }

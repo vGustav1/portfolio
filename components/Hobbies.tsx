@@ -25,7 +25,7 @@ export default function Hobbies() {
   const igdb = useApi<{ games: { name: string; cover?: string; genre?: string; year?: number }[] }>("/api/igdb");
   const games = favoriteGames.map((g, i) => {
     const hit = igdb?.games?.[i];
-    return { name: g.name, cover: hit?.cover ?? g.cover, genre: t(g.genre) };
+    return { name: g.name, cover: hit?.cover ?? g.cover };
   });
   const maxHours = Math.max(1, ...(steam?.games.map((g) => g.hours) ?? [1]));
 
@@ -106,7 +106,6 @@ export default function Hobbies() {
             <article key={i}>
               <div className="ph" style={{ aspectRatio: "3 / 4" }}>{g.cover ? <img src={g.cover} alt={g.name} loading="lazy" /> : "[ capa do jogo ]"}</div>
               <span style={{ fontWeight: 700, fontSize: 15 }}>{g.name}</span>
-              <span className="lbl">{g.genre}</span>
             </article>
           ))}
         </div>
