@@ -24,7 +24,6 @@ export default function Projects() {
               {p.gif ? <img src={p.gif} alt={t(p.name)} loading="lazy" /> : t(ui.projects.gif)}
             </div>
             <div className="project-body">
-              <span className="project-ctx">{p.year} · {t(p.when).toUpperCase()} · {t(p.context)}</span>
               <h3>{t(p.name)}</h3>
               <p>{t(p.description)}</p>
               <div className="tags">

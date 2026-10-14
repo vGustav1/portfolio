@@ -94,7 +94,7 @@ export const projects: Project[] = [
       pt: "Bot para Telegram que publica ofertas de afiliado em um canal. As ofertas são cadastradas por comando ou por uma conversa guiada e postadas em rodízio automático, com imagem e preço riscado. Os dados ficam salvos em arquivo e o bot avisa no privado quando uma oferta está ativa há muitos dias.",
       en: "A Telegram bot that posts affiliate deals to a channel. Deals are added by command or through a guided chat and posted in an automatic rotation, with an image and a struck-through price. Data is saved to file, and the bot sends a private alert when a deal has been active for too many days.",
     },
-    tech: ["Python", "python-telegram-bot", "JobQueue", "dotenv"],
+    tech: ["Python"],
     repo: "https://github.com/vGustav1/bot-promocoes-telegram",
     gif: "/projetos/bot-promocoes.gif",
   },
