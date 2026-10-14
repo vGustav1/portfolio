@@ -1,19 +1,13 @@
-/**
- * Todo o conteúdo do site fica aqui.
- * Para atualizar projetos, experiências e tecnologias, edite só este arquivo.
- * Textos entre [colchetes] são para trocar pelos seus dados reais.
- */
-
 export type Lang = "pt" | "en";
 export type Bi = { pt: string; en: string };
 
 export const profile = {
   name: "Gustavo Vieira",
-  /** Sua foto: coloque o arquivo em public/ e escreva o caminho, ex.: "/foto.jpg". Vazio = placeholder. */
+
   photo: "",
   links: {
     email: "seu@email.com",
-    whatsapp: "5500000000000", // só números, com DDI e DDD
+    whatsapp: "5500000000000",
     linkedin: "https://www.linkedin.com/in/seu-perfil",
     github: "https://github.com/vGustav1",
   },
@@ -48,8 +42,8 @@ export type Skill = {
   name: string;
   category: Bi;
   color: string;
-  orbit: 0 | 1 | 2; // 0 = mais perto do sol
-  angle: number; // posição na órbita, em graus
+  orbit: 0 | 1 | 2;
+  angle: number;
   size: number;
   status: "used" | "learning";
   usedIn: Bi[];
@@ -73,11 +67,10 @@ export type Project = {
   description: Bi;
   tech: string[];
   repo: string;
-  /** Caminho em /public, ex.: "/projetos/login.gif". Vazio = placeholder. */
+
   gif?: string;
 };
 
-/** Do mais antigo para o mais recente (requisito do enunciado). */
 export const projects: Project[] = [
   {
     year: "[ANO]",
@@ -127,7 +120,6 @@ export const experiences: Experience[] = [
   { type: "pro", when: { pt: "[mês ano] — [atual]", en: "[month year] — [present]" }, role: { pt: "[Cargo ou atividade]", en: "[Role or activity]" }, org: { pt: "[Empresa ou cliente]", en: "[Company or client]" }, description: { pt: "[O que você fez e o resultado.]", en: "[What you did and the result.]" } },
 ];
 
-/** Jogos favoritos (seção Hobbies). Capas em /public/jogos/. */
 export const favoriteGames: { name: string; cover?: string; genre: Bi }[] = [
   { name: "Hotline Miami", genre: { pt: "Ação", en: "Action" } },
   { name: "Balatro", genre: { pt: "Roguelike de cartas", en: "Card roguelike" } },

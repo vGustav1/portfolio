@@ -16,7 +16,6 @@ export default function Header() {
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState("");
 
-  // Destaca no menu a seção que está na tela.
   useEffect(() => {
     const obs = new IntersectionObserver(
       (entries) => entries.forEach((e) => e.isIntersecting && setActive(e.target.id)),

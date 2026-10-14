@@ -3,7 +3,6 @@
 import { createContext, useContext, useEffect, useState, type ReactNode } from "react";
 import type { Bi, Lang } from "@/data/content";
 
-/** Textos fixos da interface, em português e inglês. */
 export const ui = {
   nav: {
     about: { pt: "Sobre mim", en: "About me" },
@@ -101,7 +100,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
       const saved = localStorage.getItem("lang");
       if (saved === "pt" || saved === "en") setLangState(saved);
     } catch {
-      /* sem armazenamento disponível: fica em português */
+
     }
   }, []);
 
@@ -114,7 +113,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     try {
       localStorage.setItem("lang", l);
     } catch {
-      /* ignora */
+
     }
   };
 

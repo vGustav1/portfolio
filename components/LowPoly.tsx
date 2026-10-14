@@ -1,5 +1,3 @@
-/** Ícones e objetos low-poly do site, desenhados em SVG. Todos decorativos. */
-
 type P = { size?: number };
 
 export function IdCard({ size = 84 }: P) {
@@ -136,7 +134,6 @@ export function Terminal({ size = 46 }: P) {
   );
 }
 
-/** Sol facetado do sistema solar. */
 export function Sun({ size = 96 }: P) {
   return (
     <svg width={size} height={size} viewBox="0 0 40 40" aria-hidden="true" className="sun">
@@ -155,7 +152,6 @@ export function Sun({ size = 96 }: P) {
   );
 }
 
-/** Planeta facetado: recebe a cor base e gera as faces mais claras e mais escuras. */
 export function Planet({ color, size }: { color: string; size: number }) {
   const c0 = mix(color, 0.45, true);
   const c1 = mix(color, 0.2, true);

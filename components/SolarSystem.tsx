@@ -5,8 +5,6 @@ import { skills } from "@/data/content";
 import { ui, useLang } from "@/lib/i18n";
 import { Planet, Sun } from "./LowPoly";
 
-// Palco de 1000 x 500 (proporção 2:1, a mesma do .space no CSS).
-// Órbitas em elipse dão a sensação de perspectiva.
 const W = 1000;
 const H = 500;
 const ORBITS: [number, number][] = [
@@ -14,14 +12,13 @@ const ORBITS: [number, number][] = [
   [320, 140],
   [440, 200],
 ];
-const SPEED = [0.006, 0.004, 0.0028]; // graus por milissegundo
+const SPEED = [0.006, 0.004, 0.0028];
 
 export default function SolarSystem() {
   const { t } = useLang();
   const [tick, setTick] = useState(0);
   const [paused, setPaused] = useState(false);
 
-  // Planetas giram devagar; param com o mouse em cima ou se o sistema pede menos movimento.
   useEffect(() => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     let raf = 0;

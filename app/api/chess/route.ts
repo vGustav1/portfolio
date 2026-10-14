@@ -3,7 +3,6 @@ import { fallback, REVALIDATE, type ChessData } from "@/lib/hobbies";
 
 export const revalidate = 600;
 
-/** Ratings do Chess.com (API pública, não precisa de chave). */
 export async function GET() {
   const user = process.env.CHESS_USERNAME;
   if (!user) return NextResponse.json(fallback.chess);

@@ -17,7 +17,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        {/* eslint-disable-next-line @next/next/no-page-custom-font */}
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,800;1,900&family=Chakra+Petch:wght@400;500;600;700&family=Share+Tech+Mono&display=swap"
@@ -25,7 +24,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         <LanguageProvider>{children}</LanguageProvider>
-        {/* Efeito VHS sutil por cima de tudo (não bloqueia cliques) */}
         <div className="vhs" aria-hidden="true"><span className="vhs-band" /></div>
       </body>
     </html>

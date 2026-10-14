@@ -7,7 +7,6 @@ export default function Hero() {
   const { t } = useLang();
   const bg = useRef<HTMLDivElement>(null);
 
-  // Parallax: a cidade sobe mais devagar que o conteúdo ao rolar.
   useEffect(() => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     let frame = 0;

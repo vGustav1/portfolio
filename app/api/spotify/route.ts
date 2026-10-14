@@ -27,11 +27,10 @@ const toData = (track: Track, isPlaying: boolean): SpotifyData => ({
   isPlaying,
   title: track.name,
   artist: track.artists.map((a) => a.name).join(", "),
-  cover: track.album.images[0]?.url, // a maior (640px)
+  cover: track.album.images[0]?.url,
   url: track.external_urls.spotify,
 });
 
-/** Música tocando agora; se nada estiver tocando, a última ouvida. */
 export async function GET() {
   try {
     const token = await accessToken();

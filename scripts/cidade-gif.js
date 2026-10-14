@@ -20,7 +20,7 @@ function city(w, h, seed, sunX, f, F) {
       if (winP > 0) for (let wy = top + 12; wy < hz - 10; wy += 14) for (let wx = x + 8; wx < x + bw - 8; wx += 11) if (R() < winP) {
         const c = ['#FFD9A0', '#FF9A8A', '#FFE9BE', '#FF6F8E'][ri(0, 3)];
         const op = 0.6 + R() * 0.4; wi++;
-        // só ~3% das janelas piscam; cada uma apaga por 12 frames (~1,7s) num ponto diferente do ciclo de 48
+
         const hv = h0(wi); const blinker = hv < 0.03; const start = Math.floor(((hv * 9973) % 1) * F);
         const off = blinker && ((f - start + F) % F) < 12;
         if (!off) o += `<rect x="${wx}" y="${wy}" width="5" height="7" fill="${c}" opacity="${op.toFixed(2)}"/>`;
@@ -59,7 +59,7 @@ function city(w, h, seed, sunX, f, F) {
   };
   palm(Math.round(w * 0.05), Math.round(w * 0.03), Math.round(h * 0.48));
   palm(Math.round(w * 0.95), Math.round(w * 0.985), Math.round(h * 0.42));
-  // scanlines
+
   return o + '</svg>';
 }
 

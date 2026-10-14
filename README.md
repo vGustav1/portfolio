@@ -67,8 +67,6 @@ public/         imagens e GIFs
 
 ## Demonstração
 
-<!-- Adicione aqui os prints dos wireframes (Figma) e do site -->
-
 | Wireframe | Site |
 | --- | --- |
 | ![Wireframe](docs/wireframe.png) | ![Site](docs/site.png) |

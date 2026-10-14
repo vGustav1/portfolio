@@ -1,11 +1,3 @@
-/**
- * Gera o SPOTIFY_REFRESH_TOKEN (só precisa rodar uma vez).
- *
- * 1. Em https://developer.spotify.com/dashboard crie um app e adicione a Redirect URI:
- *      http://127.0.0.1:3001/callback
- * 2. Rode:  node scripts/spotify-token.mjs SEU_CLIENT_ID SEU_CLIENT_SECRET
- * 3. Abra o link que aparecer, autorize, e copie o refresh token mostrado no terminal.
- */
 import http from "node:http";
 
 const [clientId, clientSecret] = process.argv.slice(2);

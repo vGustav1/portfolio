@@ -1,11 +1,10 @@
 import { NextResponse } from "next/server";
 import { favoriteGames } from "@/data/content";
 
-export const revalidate = 86400; // capas e gêneros quase nunca mudam: 1 dia de cache
+export const revalidate = 86400;
 
 type Game = { name: string; cover?: string; genre?: string; year?: number };
 
-/** Busca capa, gênero e ano dos jogos favoritos (lista em data/content.ts) na IGDB. */
 export async function GET() {
   const id = process.env.TWITCH_CLIENT_ID;
   const secret = process.env.TWITCH_CLIENT_SECRET;

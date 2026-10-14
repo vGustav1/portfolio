@@ -3,7 +3,6 @@ import { fallback, REVALIDATE, type SteamData } from "@/lib/hobbies";
 
 export const revalidate = 600;
 
-/** Três jogos com mais horas na biblioteca Steam (perfil precisa estar público). */
 export async function GET() {
   const key = process.env.STEAM_API_KEY;
   const id = process.env.STEAM_ID;

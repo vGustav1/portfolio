@@ -3,11 +3,6 @@ import { fallback, REVALIDATE, type LolData } from "@/lib/hobbies";
 
 export const revalidate = 600;
 
-/**
- * Elo da fila ranqueada solo e resultado das últimas 5 partidas.
- * Atenção: a chave de desenvolvedor da Riot expira a cada 24h.
- * Para o site no ar, peça uma "Personal API Key" no portal da Riot.
- */
 export async function GET() {
   const key = process.env.RIOT_API_KEY;
   const name = process.env.RIOT_GAME_NAME;
