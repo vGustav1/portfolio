@@ -109,7 +109,7 @@ export type Experience = {
 export const experiences: Experience[] = [
   {
     type: "evt",
-    when: { pt: "2026", en: "2026" },
+    when: { pt: "2º semestre de 2026", en: "2nd semester of 2026" },
     role: { pt: "Voluntário", en: "Volunteer" },
     org: { pt: "We Make Software · PUC Minas", en: "We Make Software · PUC Minas" },
     description: {
