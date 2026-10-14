@@ -108,6 +108,16 @@ export type Experience = {
 
 export const experiences: Experience[] = [
   {
+    type: "pro",
+    when: { pt: "out 2026 — atual", en: "Oct 2026 — present" },
+    role: { pt: "Desenvolvedor Back-end", en: "Back-end Developer" },
+    org: { pt: "PUC COMP · Empresa Júnior da PUC Minas", en: "PUC COMP · PUC Minas Junior Enterprise" },
+    description: {
+      pt: "Membro da empresa júnior de computação da PUC Minas, atuando na área de desenvolvimento back-end.",
+      en: "Member of PUC Minas's computing junior enterprise, working in the back-end development team.",
+    },
+  },
+  {
     type: "evt",
     when: { pt: "2º semestre de 2026", en: "2nd semester of 2026" },
     role: { pt: "Voluntário", en: "Volunteer" },
