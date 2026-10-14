@@ -189,7 +189,12 @@ body { overflow-x: clip; }
 .hobby-grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 40px 28px; }
 .hobby-grid > .spotify { grid-column: span 5; }
 .hobby-grid > .steam { grid-column: span 7; }
-.hobby-grid > .lol, .hobby-grid > .chess { grid-column: span 6; }
+.hobby-grid > .team, .hobby-grid > .chess { grid-column: span 6; }
+.team-body { display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-end; }
+.team-photo { width: clamp(160px, 45%, 260px); aspect-ratio: 4 / 5; }
+.team-photo img { object-position: center top; }
+.team-info { flex: 1 1 140px; display: flex; flex-direction: column; gap: 8px; }
+.team-name { font-family: var(--f-display); font-weight: 900; font-style: italic; text-transform: uppercase; font-size: clamp(36px, 3.4vw, 56px); line-height: 1; color: #4d8dff; text-shadow: -2px 2px 0 #0b0016; }
 @media (max-width: 1300px) { .hobby-grid > * { grid-column: 1 / -1 !important; } }
 .spotify-body { display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-end; }
 .spotify-cover { width: clamp(180px, 60%, 340px); aspect-ratio: 1; box-shadow: 0 0 40px rgba(30, 215, 96, 0.18); }
@@ -208,8 +213,6 @@ body { overflow-x: clip; }
 .row { display: flex; gap: 16px; align-items: center; }
 .bar { height: 5px; background: rgba(255, 255, 255, 0.12); }
 .bar > span { display: block; height: 5px; }
-.results { display: flex; gap: 8px; }
-.res { width: 38px; height: 38px; display: grid; place-items: center; color: var(--bg); font-weight: 700; font-size: 14px; }
 .ratings { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
 .rating { display: flex; flex-direction: column; gap: 2px; padding: 12px; border: 1px solid rgba(46, 242, 255, 0.5); }
 .rating b { font-family: var(--f-display); font-weight: 900; font-style: italic; font-size: 30px; }

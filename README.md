@@ -17,7 +17,7 @@ A abertura é uma cidade animada ao pôr do sol. Ao rolar, o conteúdo aparece s
 - **Sobre mim** — apresentação, formação e um sistema solar interativo com as tecnologias que já usei
 - **Projetos** — linha do tempo do mais antigo ao mais recente, com tecnologias, GitHub e GIF
 - **Experiências** — com filtro por tipo
-- **Hobbies** — dados ao vivo do Spotify, Steam, League of Legends e Chess.com
+- **Hobbies** — dados ao vivo do Spotify, Steam e Chess.com, jogos favoritos e time do coração
 - **Contato** — ícones clicáveis e formulário que envia e-mail
 
 ## Tecnologias
@@ -28,7 +28,7 @@ A abertura é uma cidade animada ao pôr do sol. Ao rolar, o conteúdo aparece s
 | Linguagem | TypeScript 5 |
 | Estilo | CSS puro com variáveis |
 | E-mail | EmailJS (`@emailjs/browser`) |
-| APIs | Spotify, Steam, Riot Games, Chess.com, IGDB |
+| APIs | Spotify, Steam, Chess.com, IGDB |
 | Hospedagem | Vercel |
 
 As chaves das APIs ficam no servidor, nas rotas `app/api/*`. Sem chave configurada, cada card mostra dados de exemplo em vez de quebrar.
@@ -53,7 +53,7 @@ As variáveis de ambiente estão explicadas no [`.env.example`](.env.example). N
 
 ```
 app/
-  api/          rotas de servidor (Spotify, Steam, LoL, xadrez, IGDB)
+  api/          rotas de servidor (Spotify, Steam, xadrez, IGDB)
   layout.tsx    HTML base e fontes
   page.tsx      página única
   globals.css   identidade visual

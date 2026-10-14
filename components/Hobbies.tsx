@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { favoriteGames } from "@/data/content";
 import { ui, useLang } from "@/lib/i18n";
 import { Gamepad } from "./LowPoly";
-import type { ChessData, LolData, SpotifyData, SteamData } from "@/lib/hobbies";
+import type { ChessData, SpotifyData, SteamData } from "@/lib/hobbies";
 
 function useApi<T>(url: string) {
   const [data, setData] = useState<T | null>(null);
@@ -17,20 +17,16 @@ function useApi<T>(url: string) {
   return data;
 }
 
-const resColor = (r: string) => (r === "W" ? "var(--cyan)" : r === "L" ? "var(--pink)" : "var(--muted)");
-
 export default function Hobbies() {
   const { t, lang } = useLang();
   const spotify = useApi<SpotifyData>("/api/spotify");
   const steam = useApi<SteamData>("/api/steam");
-  const lol = useApi<LolData>("/api/lol");
   const chess = useApi<ChessData>("/api/chess");
   const igdb = useApi<{ games: { name: string; cover?: string; genre?: string; year?: number }[] }>("/api/igdb");
   const games = favoriteGames.map((g, i) => {
     const hit = igdb?.games?.[i];
     return { name: g.name, cover: hit?.cover ?? g.cover, genre: t(g.genre) };
   });
-  const resLabel = (r: string) => (lang === "pt" ? ({ W: "V", L: "D", D: "E" } as Record<string, string>)[r] ?? r : r);
   const maxHours = Math.max(1, ...(steam?.games.map((g) => g.hours) ?? [1]));
 
   return (
@@ -78,21 +74,17 @@ export default function Hobbies() {
           {steam?.sample && <span className="note">{t(ui.hobbies.offline)}</span>}
         </div>
 
-        <div className="card hobby lol">
-          <span className="src">LEAGUE OF LEGENDS</span>
-          <div className="row">
-            <div className="ph" style={{ width: 80, height: 80 }}>[ elo ]</div>
-            <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
-              <span style={{ fontWeight: 700, fontSize: 21 }}>{lol?.rank ?? "—"}</span>
-              <span className="lbl">{lol ? `${lol.lp} PDL · ${lol.winRate}% ${t(ui.hobbies.winRate)}` : "—"}</span>
+        <div className="card hobby team">
+          <span className="src">{t(ui.hobbies.team)}</span>
+          <div className="team-body">
+            <div className="ph team-photo">
+              <img src="/cruzeiro.jpg" alt="Cruzeiro" loading="lazy" />
+            </div>
+            <div className="team-info">
+              <span className="team-name">Cruzeiro</span>
+              <span className="lbl">Belo Horizonte · MG</span>
             </div>
           </div>
-          <div className="results">
-            {(lol?.recent ?? []).map((r, i) => (
-              <span key={i} className="res" style={{ background: resColor(r) }}>{resLabel(r)}</span>
-            ))}
-          </div>
-          {lol?.sample && <span className="note">{t(ui.hobbies.offline)}</span>}
         </div>
 
         <div className="card hobby chess">

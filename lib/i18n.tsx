@@ -65,7 +65,7 @@ export const ui = {
     lastPlayed: { pt: "OUVIDO POR ÚLTIMO", en: "LAST PLAYED" },
     mostPlayed: { pt: "MAIS JOGADOS", en: "MOST PLAYED" },
     hours: { pt: "h", en: "h" },
-    winRate: { pt: "de vitórias", en: "win rate" },
+    team: { pt: "TIME DO CORAÇÃO", en: "MY TEAM" },
     chess: { pt: "XADREZ", en: "CHESS" },
     rapid: { pt: "RÁPIDA", en: "RAPID" },
     favorites: { pt: "JOGOS FAVORITOS", en: "FAVORITE GAMES" },
