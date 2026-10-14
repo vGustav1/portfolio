@@ -4,7 +4,7 @@ export type Bi = { pt: string; en: string };
 export const profile = {
   name: "Gustavo Vieira",
 
-  photo: "",
+  photo: "/foto.jpg",
   links: {
     email: "gustavofvieira5@gmail.com",
     whatsapp: "5531989575955",
@@ -21,10 +21,6 @@ export const profile = {
     {
       pt: "Sou formado em Análise e Desenvolvimento de Sistemas pela UniBH (2023–2025) e atualmente curso Engenharia de Software na PUC Minas.",
       en: "I hold a degree in Systems Analysis and Development from UniBH (2023–2025) and I am currently studying Software Engineering at PUC Minas.",
-    },
-    {
-      pt: "Meu objetivo é conseguir meu primeiro estágio como desenvolvedor full stack e continuar evoluindo na criação de aplicações completas, do back-end ao front-end.",
-      en: "My goal is to land my first internship as a full stack developer and keep growing in building complete applications, from back-end to front-end.",
     },
   ] as Bi[],
   education: [
@@ -96,7 +92,7 @@ export const projects: Project[] = [
   },
 ];
 
-export type ExpType = "pro" | "aca" | "oss" | "evt";
+export type ExpType = "pro" | "aca" | "oss" | "evt" | "cert";
 
 export type Experience = {
   type: ExpType;
@@ -126,6 +122,27 @@ export const experiences: Experience[] = [
       pt: "Atuei como voluntário no evento, auxiliando as bancas das empresas parceiras presentes.",
       en: "I volunteered at the event, assisting the booths of the partner companies attending.",
     },
+  },
+  {
+    type: "cert",
+    when: { pt: "", en: "" },
+    role: { pt: "Análise de Dados no Power BI", en: "Data Analysis with Power BI" },
+    org: { pt: "Fundação Bradesco", en: "Fundação Bradesco" },
+    description: { pt: "", en: "" },
+  },
+  {
+    type: "cert",
+    when: { pt: "", en: "" },
+    role: { pt: "Conceitos Básicos de Redes", en: "Networking Basics" },
+    org: { pt: "Cisco Networking Academy", en: "Cisco Networking Academy" },
+    description: { pt: "", en: "" },
+  },
+  {
+    type: "cert",
+    when: { pt: "", en: "" },
+    role: { pt: "Fundamentos do Hardware do Computador", en: "Computer Hardware Basics" },
+    org: { pt: "Cisco Networking Academy", en: "Cisco Networking Academy" },
+    description: { pt: "", en: "" },
   },
 ];
 

@@ -17,13 +17,13 @@ export default function Experience() {
         {experiences.map((e, i) => (
           <article key={i} className="card exp">
             <div className="exp-meta">
-              <span className="lbl" style={{ fontSize: 15 }}>{t(e.when)}</span>
+              {t(e.when) && <span className="lbl" style={{ fontSize: 15 }}>{t(e.when)}</span>}
               <span className="badge">{t(ui.experience.types[e.type])}</span>
             </div>
             <div className="exp-body">
               <h3>{t(e.role)}</h3>
               <span className="exp-org">{t(e.org)}</span>
-              <p>{t(e.description)}</p>
+              {t(e.description) && <p>{t(e.description)}</p>}
             </div>
           </article>
         ))}
