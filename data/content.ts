@@ -73,34 +73,30 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    year: "[ANO]",
-    when: { pt: "[semestre]", en: "[semester]" },
-    context: { pt: "[DISCIPLINA OU PESSOAL]", en: "[COURSE OR PERSONAL]" },
-    name: { pt: "[Nome do projeto 1]", en: "[Project name 1]" },
-    description: { pt: "[O problema, o que você construiu e o resultado.]", en: "[The problem, what you built and the result.]" },
-    tech: ["Java", "MySQL"],
-    repo: "https://github.com/seu-usuario/projeto-1",
-  },
-  {
-    year: "[ANO]",
-    when: { pt: "[semestre]", en: "[semester]" },
-    context: { pt: "[DISCIPLINA OU PESSOAL]", en: "[COURSE OR PERSONAL]" },
-    name: { pt: "[Nome do projeto 2]", en: "[Project name 2]" },
-    description: { pt: "[O problema, o que você construiu e o resultado.]", en: "[The problem, what you built and the result.]" },
-    tech: ["Spring Boot", "Python"],
-    repo: "https://github.com/seu-usuario/projeto-2",
+    year: "2026",
+    when: { pt: "1º semestre", en: "1st semester" },
+    context: { pt: "EM EQUIPE", en: "TEAM PROJECT" },
+    name: { pt: "Spaceshi.py", en: "Spaceshi.py" },
+    description: {
+      pt: "Jogo de nave em Python inspirado em Star Wars. O jogador pilota um caça, destrói ondas de inimigos e enfrenta um Destróier como chefe. A dificuldade aumenta com a pontuação, e o jogo tem barra de vida, trilha e efeitos sonoros, recorde salvo em arquivo e testes automatizados da lógica.",
+      en: "A Star Wars–inspired spaceship game in Python. The player flies a fighter, destroys waves of enemies and faces a Destroyer boss. Difficulty grows with the score, and the game has a health bar, music and sound effects, a high score saved to file and automated tests for the game logic.",
+    },
+    tech: ["Python", "Pygame", "Pytest"],
+    repo: "https://github.com/Nametala/Spaceshi.py",
+    gif: "/projetos/spaceshipy.gif",
   },
   {
     year: "2026",
     when: { pt: "2º semestre", en: "2nd semester" },
-    context: { pt: "DIAW · PUC MINAS", en: "DIAW · PUC MINAS" },
-    name: { pt: "Este portfólio", en: "This portfolio" },
+    context: { pt: "PESSOAL", en: "PERSONAL" },
+    name: { pt: "Bot de Promoções", en: "Deals Bot" },
     description: {
-      pt: "Site em uma página com cidade animada, sistema solar de habilidades, dados ao vivo de APIs e deploy na Vercel.",
-      en: "One-page site with an animated city, a skills solar system, live API data and deployment on Vercel.",
+      pt: "Bot para Telegram que publica ofertas de afiliado em um canal. As ofertas são cadastradas por comando ou por uma conversa guiada e postadas em rodízio automático, com imagem e preço riscado. Os dados ficam salvos em arquivo e o bot avisa no privado quando uma oferta está ativa há muitos dias.",
+      en: "A Telegram bot that posts affiliate deals to a channel. Deals are added by command or through a guided chat and posted in an automatic rotation, with an image and a struck-through price. Data is saved to file, and the bot sends a private alert when a deal has been active for too many days.",
     },
-    tech: ["Next.js", "TypeScript", "EmailJS"],
-    repo: "https://github.com/vGustav1/portfolio",
+    tech: ["Python", "python-telegram-bot", "JobQueue", "dotenv"],
+    repo: "https://github.com/vGustav1/bot-promocoes-telegram",
+    gif: "/projetos/bot-promocoes.gif",
   },
 ];
 

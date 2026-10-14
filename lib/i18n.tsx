@@ -41,7 +41,7 @@ export const ui = {
     },
   },
   projects: {
-    sub: { pt: "Do mais antigo ao mais recente.", en: "From oldest to most recent." },
+    sub: { pt: "Alguns projetos que desenvolvi.", en: "Some projects I have built." },
     repo: { pt: "Ver repositório no GitHub ›", en: "View repository on GitHub ›" },
     gif: { pt: "[ GIF do projeto em funcionamento ]", en: "[ GIF of the project running ]" },
     recent: { pt: "REPOSITÓRIOS RECENTES · GITHUB", en: "RECENT REPOSITORIES · GITHUB" },
