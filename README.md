@@ -15,19 +15,6 @@
   </tr>
 </table>
 
----
-
-## 🚧 Status do Projeto
-
-![Status](https://img.shields.io/badge/status-concluído-2ef2ff)
-![Next.js](https://img.shields.io/badge/Next.js-16-000000?logo=nextdotjs)
-![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=000)
-![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=fff)
-![Vercel](https://img.shields.io/badge/deploy-Vercel-000000?logo=vercel)
-![Licença](https://img.shields.io/badge/licença-MIT-ff2e88)
-
----
-
 ## 📚 Índice
 - [Links Úteis](#-links-úteis)
 - [Sobre o Projeto](#-sobre-o-projeto)
