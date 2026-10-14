@@ -28,7 +28,6 @@ export default function Hero() {
       <div ref={bg} className="hero-bg" aria-hidden="true" />
       <div className="hero-fade" aria-hidden="true" />
       <div className="container hero-content">
-        <p className="kicker">{t(ui.hero.kicker)}</p>
         <h1 className="neon">Gustavo Vieira</h1>
         <p className="hero-line">{t(ui.hero.line)}</p>
         <div className="cta">

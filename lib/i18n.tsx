@@ -15,10 +15,9 @@ export const ui = {
     skip: { pt: "Pular para o conteúdo", en: "Skip to content" },
   },
   hero: {
-    kicker: { pt: "ENGENHARIA DE SOFTWARE · PUC MINAS", en: "SOFTWARE ENGINEERING · PUC MINAS" },
     line: {
-      pt: "Estudante de Engenharia de Software na PUC Minas. Desenvolvo aplicações e gosto de unir código e jogos.",
-      en: "Software Engineering student at PUC Minas. I build applications and love bringing code and games together.",
+      pt: "Desenvolvedor Full Stack",
+      en: "Full Stack Developer",
     },
     ctaProjects: { pt: "VER PROJETOS", en: "SEE PROJECTS" },
     ctaContact: { pt: "FALE COMIGO", en: "GET IN TOUCH" },
