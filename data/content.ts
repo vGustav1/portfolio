@@ -88,7 +88,7 @@ export const projects: Project[] = [
     },
     tech: ["Python"],
     repo: "https://github.com/vGustav1/bot-promocoes-telegram",
-    gif: "/projetos/bot-promocoes.gif",
+    gif: "/projetos/bot-promocoes.png",
   },
 ];
 
