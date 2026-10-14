@@ -1,7 +1,4 @@
-# 🏷️ Gustavo Vieira · Portfólio 👨‍💻
-
-> [!NOTE]
-> Portfólio profissional em uma página, com visual neon anos 80, objetos low-poly, versão em português e inglês e dados ao vivo de APIs.
+#Portfólio 👨‍💻
 
 <table>
   <tr>
@@ -132,10 +129,6 @@ Componente Hobbies renderiza os cards
 
 Formulário de contato ──► EmailJS ──► Gmail
 ```
-
-- **Conteúdo separado do código:** textos, projetos e experiências ficam em `data/content.ts`, em português e inglês.
-- **Tolerância a falhas:** se uma API estiver fora do ar ou sem chave, o card mostra dados de exemplo em vez de quebrar a página.
-
 ---
 
 ## 🔧 Instalação e Execução
@@ -266,21 +259,3 @@ O deploy é feito na **Vercel**, conectada ao repositório do GitHub:
 
 ---
 
-## 👥 Autores
-
-| 👤 Nome | 🖼️ Foto | :octocat: GitHub | 💼 LinkedIn | 📤 Gmail |
-|---------|----------|-----------------|-------------|-----------|
-| Gustavo Vieira | <div align="center"><img src="public/foto.jpg" width="70px" height="70px"></div> | <div align="center"><a href="https://github.com/vGustav1"><img src="https://joaopauloaramuni.github.io/image/github6.png" width="50px" height="50px"></a></div> | <div align="center"><a href="https://www.linkedin.com/in/gustavovieira21"><img src="https://joaopauloaramuni.github.io/image/linkedin2.png" width="50px" height="50px"></a></div> | <div align="center"><a href="mailto:gustavofvieira5@gmail.com"><img src="https://joaopauloaramuni.github.io/image/gmail3.png" width="50px" height="50px"></a></div> |
-
----
-
-## 🙏 Agradecimentos
-
-* [**Engenharia de Software PUC Minas**](https://www.instagram.com/engsoftwarepucminas/) - Pelo apoio institucional e estrutura acadêmica.
-* [**Prof. Dr. João Paulo Aramuni**](https://github.com/joaopauloaramuni) - Pela proposta do laboratório e pelo template deste README.
-
----
-
-## 📄 Licença
-
-Este projeto é distribuído sob a **[Licença MIT](./LICENSE)**.
