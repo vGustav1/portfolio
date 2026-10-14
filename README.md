@@ -155,6 +155,16 @@ O site está hospedado na Vercel, ligada a este repositório. As variáveis de a
 
 ## 🎥 Demonstração
 
+### 🧩 Wireframes (Figma)
+
+| Início | Sobre mim |
+| :---: | :---: |
+| <img src="docs/wireframes/01-inicio.jpg" alt="Wireframe do início" width="420px"> | <img src="docs/wireframes/02-sobre-mim.jpg" alt="Wireframe do sobre mim" width="420px"> |
+| **Projetos** | **Experiências** |
+| <img src="docs/wireframes/03-projetos.jpg" alt="Wireframe dos projetos" width="420px"> | <img src="docs/wireframes/04-experiencias.jpg" alt="Wireframe das experiências" width="420px"> |
+| **Hobbies** | **Contato** |
+| <img src="docs/wireframes/05-hobbies.jpg" alt="Wireframe dos hobbies" width="420px"> | <img src="docs/wireframes/06-contato.jpg" alt="Wireframe do contato" width="420px"> |
+
 ### 🌐 Aplicação Web
 
 | Abertura | Sobre mim |
