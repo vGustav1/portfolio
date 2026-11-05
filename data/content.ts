@@ -121,7 +121,7 @@ export const projects: Project[] = [
       { name: "Corvo Tattoo", url: "https://corvo-tattoo-seven.vercel.app" },
       { name: "Amora Beauty", url: "https://amora-beauty-bh.vercel.app" },
     ],
-    gif: "/projetos/id-solucoes.jpg",
+    gif: "/projetos/id-solucoes.gif",
   },
 ];
 
