@@ -31,7 +31,15 @@ export default function Projects() {
                   <span key={tech} className="tag">{tech}</span>
                 ))}
               </div>
-              <a className="link-strong" href={p.repo} target="_blank" rel="noopener noreferrer">{t(ui.projects.repo)}</a>
+              {p.examples && (
+                <div className="project-examples">
+                  <span className="lbl">{t(ui.projects.examples)}</span>
+                  {p.examples.map((ex) => (
+                    <a key={ex.url} href={ex.url} target="_blank" rel="noopener noreferrer">{ex.name} ↗</a>
+                  ))}
+                </div>
+              )}
+              <a className="link-strong" href={p.repo} target="_blank" rel="noopener noreferrer">{p.linkLabel ? t(p.linkLabel) : t(ui.projects.repo)}</a>
             </div>
           </article>
         ))}

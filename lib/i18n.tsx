@@ -42,6 +42,7 @@ export const ui = {
   projects: {
     sub: { pt: "Alguns projetos que desenvolvi.", en: "Some projects I have built." },
     repo: { pt: "Ver repositório no GitHub ›", en: "View repository on GitHub ›" },
+    examples: { pt: "Páginas de exemplo:", en: "Sample pages:" },
     gif: { pt: "[ GIF do projeto em funcionamento ]", en: "[ GIF of the project running ]" },
     recent: { pt: "REPOSITÓRIOS RECENTES · GITHUB", en: "RECENT REPOSITORIES · GITHUB" },
     noDesc: { pt: "Sem descrição.", en: "No description." },
