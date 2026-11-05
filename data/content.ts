@@ -108,10 +108,10 @@ export const projects: Project[] = [
     year: "2026",
     when: { pt: "2º semestre", en: "2nd semester" },
     context: { pt: "NEGÓCIO PRÓPRIO", en: "OWN BUSINESS" },
-    name: { pt: "ID Soluções · Landing Pages", en: "ID Soluções · Landing Pages" },
+    name: { pt: "iD Soluções · Sites em BH", en: "iD Soluções · Websites in BH" },
     description: {
-      pt: "Negócio de criação de landing pages que montei com um amigo, voltado para pequenos negócios de BH e região, como petshops, estúdios de tatuagem e salões de beleza. As páginas são focadas em levar o cliente ao WhatsApp, com avaliações do Google, localização e galeria, e são publicadas na Vercel.",
-      en: "A landing page business I started with a friend, serving small businesses in Belo Horizonte, such as pet shops, tattoo studios and beauty salons. The pages are built to drive customers to WhatsApp, with Google reviews, location and a gallery, and are deployed on Vercel.",
+      pt: "Negócio de criação de sites que montei com um amigo em Belo Horizonte, para quem toca o próprio negócio, como petshops, estúdios de tatuagem e salões de beleza. São landing pages a partir de R$ 300, no ar em 5 dias, focadas em levar o cliente ao WhatsApp, com avaliações do Google, localização e galeria.",
+      en: "A website business I started with a friend in Belo Horizonte, for people who run their own business, such as pet shops, tattoo studios and beauty salons. Landing pages from R$ 300, live in 5 days, built to drive customers to WhatsApp, with Google reviews, location and a gallery.",
     },
     tech: ["React", "TypeScript", "Vite", "HTML/CSS", "Vercel"],
     repo: "https://www.instagram.com/idsolucoes.bh/",
@@ -121,7 +121,7 @@ export const projects: Project[] = [
       { name: "Corvo Tattoo", url: "https://corvo-tattoo-seven.vercel.app" },
       { name: "Amora Beauty", url: "https://amora-beauty-bh.vercel.app" },
     ],
-    gif: "/projetos/id-solucoes.gif",
+    gif: "/projetos/id-solucoes.jpg",
   },
 ];
 
