@@ -59,8 +59,6 @@ export type Project = {
   description: Bi;
   tech: string[];
   repo: string;
-  linkLabel?: Bi;
-  examples?: { name: string; url: string }[];
   gif?: string;
 };
 
@@ -104,27 +102,62 @@ export const projects: Project[] = [
     repo: "https://github.com/vGustav1/aluguel-carros",
     gif: "/projetos/aluguel-carros.gif",
   },
-  {
-    year: "2026",
-    when: { pt: "2º semestre", en: "2nd semester" },
-    context: { pt: "NEGÓCIO PRÓPRIO", en: "OWN BUSINESS" },
-    name: { pt: "iD Soluções · Sites em BH", en: "iD Soluções · Websites in BH" },
-    description: {
-      pt: "Negócio de criação de sites que montei com um amigo em Belo Horizonte, para quem toca o próprio negócio. Os sites saem a partir de R$ 300, com preço fechado, e ficam no ar em 5 dias, com domínio configurado, presença no Google e botão de WhatsApp. Por R$ 500, o pacote inclui também a identidade visual: logotipo, paleta e tipografia.",
-      en: "A website business I started with a friend in Belo Horizonte, for people who run their own business. Sites start at R$ 300 at a fixed price and go live in 5 days, with a configured domain, Google presence and a WhatsApp button. For R$ 500, the package also includes a visual identity: logo, palette and typography.",
-    },
-    tech: ["React", "TypeScript", "Vite", "HTML/CSS", "Vercel"],
-    repo: "https://www.instagram.com/idsolucoes.bh/",
-    linkLabel: { pt: "Ver no Instagram ›", en: "See on Instagram ›" },
-    examples: [
-      { name: "VIA Drones", url: "https://viadronesmarcel.vercel.app" },
-      { name: "THE BL4CK GYM", url: "https://bl4ck-gym.vercel.app" },
-      { name: "Studio Rondas", url: "https://studio-rondas.vercel.app" },
-      { name: "iD Soluções", url: "https://id-site-nametala-s-projects.vercel.app" },
-    ],
-    gif: "/projetos/id-solucoes.jpg",
-  },
 ];
+
+export type Showcase = {
+  name: string;
+  segment: Bi;
+  url: string;
+  gif: string;
+  kind: "client" | "model";
+};
+
+export const idSolucoes = {
+  context: { pt: "NEGÓCIO PRÓPRIO", en: "OWN BUSINESS" },
+  tagline: { pt: "Sites para quem toca o próprio negócio", en: "Websites for people who run their own business" },
+  description: {
+    pt: "Negócio de criação de sites que montei com um amigo em Belo Horizonte, para quem toca o próprio negócio. Os sites saem a partir de R$ 300, com preço fechado, e ficam no ar em 5 dias, com domínio configurado, presença no Google e botão de WhatsApp. Por R$ 500, o pacote inclui também a identidade visual: logotipo, paleta e tipografia.",
+    en: "A website business I started with a friend in Belo Horizonte, for people who run their own business. Sites start at R$ 300 at a fixed price and go live in 5 days, with a configured domain, Google presence and a WhatsApp button. For R$ 500, the package also includes a visual identity: logo, palette and typography.",
+  },
+  tech: ["React", "TypeScript", "Vite", "HTML/CSS", "Vercel"],
+  image: "/projetos/id-solucoes.jpg",
+  site: "https://id-site-nametala-s-projects.vercel.app",
+  instagram: "https://www.instagram.com/idsolucoes.bh/",
+  showcase: [
+    {
+      name: "VIA Drones",
+      segment: { pt: "Pulverização agrícola · Medeiros, MG", en: "Crop spraying · Medeiros, MG" },
+      url: "https://viadronesmarcel.vercel.app",
+      gif: "/projetos/id-solucoes/via-drones.gif",
+      kind: "client",
+    },
+    {
+      name: "THE BL4CK GYM",
+      segment: { pt: "Academia · Belo Horizonte", en: "Gym · Belo Horizonte" },
+      url: "https://bl4ck-gym.vercel.app",
+      gif: "/projetos/id-solucoes/bl4ck-gym.gif",
+      kind: "client",
+    },
+    {
+      name: "Estúdio Raiz",
+      segment: { pt: "Interiores e paisagismo", en: "Interiors and landscaping" },
+      url: "https://estudio-raiz-ten.vercel.app",
+      gif: "/projetos/id-solucoes/estudio-raiz.gif",
+      kind: "model",
+    },
+    {
+      name: "Corvo Tattoo",
+      segment: { pt: "Estúdio de tatuagem", en: "Tattoo studio" },
+      url: "https://corvo-tattoo-seven.vercel.app",
+      gif: "/projetos/id-solucoes/corvo-tattoo.gif",
+      kind: "model",
+    },
+  ] as Showcase[],
+  moreClients: [
+    { name: "Studio Rondas", url: "https://studio-rondas.vercel.app" },
+    { name: "Lepetity Petshop", url: "https://lepetity-petshop.vercel.app" },
+  ],
+};
 
 export type ExpType = "pro" | "aca" | "oss" | "evt" | "cert";
 

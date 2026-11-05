@@ -7,6 +7,7 @@ export const ui = {
   nav: {
     about: { pt: "Sobre mim", en: "About me" },
     projects: { pt: "Projetos", en: "Projects" },
+    idSolucoes: { pt: "iD Soluções", en: "iD Soluções" },
     experience: { pt: "Experiências", en: "Experience" },
     hobbies: { pt: "Hobbies", en: "Hobbies" },
     contact: { pt: "Contato", en: "Contact" },
@@ -42,10 +43,20 @@ export const ui = {
   projects: {
     sub: { pt: "Alguns projetos que desenvolvi.", en: "Some projects I have built." },
     repo: { pt: "Ver repositório no GitHub ›", en: "View repository on GitHub ›" },
-    examples: { pt: "Páginas de exemplo:", en: "Sample pages:" },
     gif: { pt: "[ GIF do projeto em funcionamento ]", en: "[ GIF of the project running ]" },
     recent: { pt: "REPOSITÓRIOS RECENTES · GITHUB", en: "RECENT REPOSITORIES · GITHUB" },
     noDesc: { pt: "Sem descrição.", en: "No description." },
+  },
+  idSolucoes: {
+    sub: { pt: "Meu negócio de sites, em sociedade com um amigo.", en: "My website business, co-founded with a friend." },
+    site: { pt: "Ver site da iD ›", en: "Visit the iD website ›" },
+    instagram: { pt: "Ver no Instagram ›", en: "See on Instagram ›" },
+    work: { pt: "TRABALHOS NO AR", en: "LIVE WORK" },
+    client: { pt: "Cliente", en: "Client" },
+    model: { pt: "Modelo", en: "Demo" },
+    preview: { pt: "Prévia animada do site", en: "Animated preview of the website" },
+    live: { pt: "Ver site no ar ›", en: "View live site ›" },
+    more: { pt: "Outros clientes:", en: "More clients:" },
   },
   experience: {
     filter: { pt: "Filtrar por tipo", en: "Filter by type" },
