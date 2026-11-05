@@ -90,6 +90,19 @@ export const projects: Project[] = [
     repo: "https://github.com/vGustav1/bot-promocoes-telegram",
     gif: "/projetos/bot-promocoes.gif",
   },
+  {
+    year: "2026",
+    when: { pt: "2º semestre", en: "2nd semester" },
+    context: { pt: "PUC MINAS", en: "PUC MINAS" },
+    name: { pt: "Locar · Aluguel de Carros", en: "Locar · Car Rental" },
+    description: {
+      pt: "Sistema web de aluguel de automóveis. Clientes se cadastram, fazem login e criam, modificam e cancelam pedidos de aluguel; agentes (empresas e bancos) analisam a renda do cliente e aprovam ou reprovam os pedidos. Arquitetura MVC com API REST.",
+      en: "A car rental web system. Customers sign up, log in and create, edit and cancel rental requests; agents (companies and banks) review the customer's income and approve or reject the requests. MVC architecture with a REST API.",
+    },
+    tech: ["Java", "Spring Boot", "React", "PostgreSQL"],
+    repo: "https://github.com/vGustav1/aluguel-carros",
+    gif: "/projetos/aluguel-carros.gif",
+  },
 ];
 
 export type ExpType = "pro" | "aca" | "oss" | "evt" | "cert";
