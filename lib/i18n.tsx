@@ -53,7 +53,12 @@ export const ui = {
     instagram: { pt: "Ver no Instagram ›", en: "See on Instagram ›" },
     dev: { pt: "COMO DESENVOLVO", en: "HOW I BUILD" },
     hub: { pt: "Claude Code · assistente de desenvolvimento", en: "Claude Code · development assistant" },
-    sites: { pt: "Sites desenvolvidos:", en: "Websites built:" },
+    work: { pt: "TRABALHOS NO AR", en: "LIVE WORK" },
+    client: { pt: "Cliente", en: "Client" },
+    model: { pt: "Modelo", en: "Demo" },
+    preview: { pt: "Prévia animada do site", en: "Animated preview of the website" },
+    live: { pt: "Ver site no ar ›", en: "View live site ›" },
+    more: { pt: "Outros clientes:", en: "More clients:" },
   },
   experience: {
     filter: { pt: "Filtrar por tipo", en: "Filter by type" },

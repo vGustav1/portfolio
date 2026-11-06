@@ -54,9 +54,29 @@ export default function IdSolucoes() {
             </li>
           ))}
         </ol>
+        <p className="label id-work-label">{t(ui.idSolucoes.work)}</p>
+        <div className="id-grid">
+          {idSolucoes.showcase.map((s) => (
+            <article key={s.url} className="card project">
+              <div className="project-media">
+                <img src={s.gif} alt={`${t(ui.idSolucoes.preview)} ${s.name}`} width={560} height={350} loading="lazy" />
+              </div>
+              <div className="project-body">
+                <div className="id-meta">
+                  <span className={s.kind === "client" ? "badge" : "badge badge-alt"}>
+                    {t(s.kind === "client" ? ui.idSolucoes.client : ui.idSolucoes.model)}
+                  </span>
+                  <span className="lbl">{t(s.segment)}</span>
+                </div>
+                <h3>{s.name}</h3>
+                <a className="link-strong" href={s.url} target="_blank" rel="noopener noreferrer">{t(ui.idSolucoes.live)}</a>
+              </div>
+            </article>
+          ))}
+        </div>
         <div className="project-examples">
-          <span className="lbl">{t(ui.idSolucoes.sites)}</span>
-          {idSolucoes.sites.map((c) => (
+          <span className="lbl">{t(ui.idSolucoes.more)}</span>
+          {idSolucoes.moreClients.map((c) => (
             <a key={c.url} href={c.url} target="_blank" rel="noopener noreferrer">{c.name} ↗</a>
           ))}
         </div>

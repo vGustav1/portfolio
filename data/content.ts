@@ -104,6 +104,14 @@ export const projects: Project[] = [
   },
 ];
 
+export type Showcase = {
+  name: string;
+  segment: Bi;
+  url: string;
+  gif: string;
+  kind: "client" | "model";
+};
+
 export type DevStep = {
   step: Bi;
   tool: string;
@@ -114,8 +122,8 @@ export const idSolucoes = {
   context: { pt: "NEGÓCIO PRÓPRIO", en: "OWN BUSINESS" },
   tagline: { pt: "Sites para quem toca o próprio negócio", en: "Websites for people who run their own business" },
   description: {
-    pt: "Negócio de criação de sites que montei com um amigo em Belo Horizonte, para quem toca o próprio negócio. Os sites saem a partir de R$ 300, com preço fechado, e ficam no ar em 5 dias, com domínio configurado, presença no Google e botão de WhatsApp. Por R$ 500, o pacote inclui também a identidade visual: logotipo, paleta e tipografia.",
-    en: "A website business I started with a friend in Belo Horizonte, for people who run their own business. Sites start at R$ 300 at a fixed price and go live in 5 days, with a configured domain, Google presence and a WhatsApp button. For R$ 500, the package also includes a visual identity: logo, palette and typography.",
+    pt: "Um negócio de criação de sites acessíveis para micro e pequenos empreendedores que não têm tempo ou não têm o conhecimento para ter uma presença digital.",
+    en: "A business that builds affordable websites for micro and small business owners who lack the time or the know-how to build an online presence.",
   },
   tech: ["React", "TypeScript", "Vite", "HTML/CSS", "Vercel"],
   image: "/projetos/id-solucoes.jpg",
@@ -152,13 +160,39 @@ export const idSolucoes = {
       text: { pt: "Publicar os sites, acompanhar os deploys e configurar domínios.", en: "Publishing the sites, tracking deploys and setting up domains." },
     },
   ] as DevStep[],
-  sites: [
-    { name: "VIA Drones", url: "https://viadronesmarcel.vercel.app" },
-    { name: "THE BL4CK GYM", url: "https://bl4ck-gym.vercel.app" },
+  showcase: [
+    {
+      name: "VIA Drones",
+      segment: { pt: "Pulverização agrícola · Medeiros, MG", en: "Crop spraying · Medeiros, MG" },
+      url: "https://viadronesmarcel.vercel.app",
+      gif: "/projetos/id-solucoes/via-drones.gif",
+      kind: "client",
+    },
+    {
+      name: "THE BL4CK GYM",
+      segment: { pt: "Academia · Belo Horizonte", en: "Gym · Belo Horizonte" },
+      url: "https://bl4ck-gym.vercel.app",
+      gif: "/projetos/id-solucoes/bl4ck-gym.gif",
+      kind: "client",
+    },
+    {
+      name: "Estúdio Raiz",
+      segment: { pt: "Interiores e paisagismo", en: "Interiors and landscaping" },
+      url: "https://estudio-raiz-ten.vercel.app",
+      gif: "/projetos/id-solucoes/estudio-raiz.gif",
+      kind: "model",
+    },
+    {
+      name: "Corvo Tattoo",
+      segment: { pt: "Estúdio de tatuagem", en: "Tattoo studio" },
+      url: "https://corvo-tattoo-seven.vercel.app",
+      gif: "/projetos/id-solucoes/corvo-tattoo.gif",
+      kind: "model",
+    },
+  ] as Showcase[],
+  moreClients: [
     { name: "Studio Rondas", url: "https://studio-rondas.vercel.app" },
     { name: "Lepetity Petshop", url: "https://lepetity-petshop.vercel.app" },
-    { name: "Estúdio Raiz", url: "https://estudio-raiz-ten.vercel.app" },
-    { name: "Corvo Tattoo", url: "https://corvo-tattoo-seven.vercel.app" },
   ],
 };
 
