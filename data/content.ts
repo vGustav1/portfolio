@@ -104,12 +104,10 @@ export const projects: Project[] = [
   },
 ];
 
-export type Showcase = {
-  name: string;
-  segment: Bi;
-  url: string;
-  gif: string;
-  kind: "client" | "model";
+export type DevStep = {
+  step: Bi;
+  tool: string;
+  text: Bi;
 };
 
 export const idSolucoes = {
@@ -123,39 +121,44 @@ export const idSolucoes = {
   image: "/projetos/id-solucoes.jpg",
   site: "https://id-site-nametala-s-projects.vercel.app",
   instagram: "https://www.instagram.com/idsolucoes.bh/",
-  showcase: [
+  devIntro: {
+    pt: "Usei o Claude Code como assistente de desenvolvimento, conectado a ferramentas por MCP:",
+    en: "I used Claude Code as a development assistant, connected to tools through MCP:",
+  },
+  process: [
     {
-      name: "VIA Drones",
-      segment: { pt: "Pulverização agrícola · Medeiros, MG", en: "Crop spraying · Medeiros, MG" },
-      url: "https://viadronesmarcel.vercel.app",
-      gif: "/projetos/id-solucoes/via-drones.gif",
-      kind: "client",
+      step: { pt: "Pesquisa", en: "Research" },
+      tool: "Navegador",
+      text: { pt: "Pesquisar referências e reunir as avaliações do Google e a localização de cada negócio.", en: "Researching references and gathering each business's Google reviews and location." },
     },
     {
-      name: "THE BL4CK GYM",
-      segment: { pt: "Academia · Belo Horizonte", en: "Gym · Belo Horizonte" },
-      url: "https://bl4ck-gym.vercel.app",
-      gif: "/projetos/id-solucoes/bl4ck-gym.gif",
-      kind: "client",
+      step: { pt: "Design", en: "Design" },
+      tool: "Figma",
+      text: { pt: "Levar o layout do design ao código.", en: "Turning the design layout into code." },
     },
     {
-      name: "Estúdio Raiz",
-      segment: { pt: "Interiores e paisagismo", en: "Interiors and landscaping" },
-      url: "https://estudio-raiz-ten.vercel.app",
-      gif: "/projetos/id-solucoes/estudio-raiz.gif",
-      kind: "model",
+      step: { pt: "Interface", en: "Interface" },
+      tool: "v0 (Vercel)",
+      text: { pt: "Gerar e testar variações de interface.", en: "Generating and testing interface variations." },
     },
     {
-      name: "Corvo Tattoo",
-      segment: { pt: "Estúdio de tatuagem", en: "Tattoo studio" },
-      url: "https://corvo-tattoo-seven.vercel.app",
-      gif: "/projetos/id-solucoes/corvo-tattoo.gif",
-      kind: "model",
+      step: { pt: "Versionamento", en: "Version control" },
+      tool: "GitHub",
+      text: { pt: "Versionar o código de cada cliente.", en: "Versioning each client's code." },
     },
-  ] as Showcase[],
-  moreClients: [
+    {
+      step: { pt: "Publicação", en: "Deploy" },
+      tool: "Vercel",
+      text: { pt: "Publicar os sites, acompanhar os deploys e configurar domínios.", en: "Publishing the sites, tracking deploys and setting up domains." },
+    },
+  ] as DevStep[],
+  sites: [
+    { name: "VIA Drones", url: "https://viadronesmarcel.vercel.app" },
+    { name: "THE BL4CK GYM", url: "https://bl4ck-gym.vercel.app" },
     { name: "Studio Rondas", url: "https://studio-rondas.vercel.app" },
     { name: "Lepetity Petshop", url: "https://lepetity-petshop.vercel.app" },
+    { name: "Estúdio Raiz", url: "https://estudio-raiz-ten.vercel.app" },
+    { name: "Corvo Tattoo", url: "https://corvo-tattoo-seven.vercel.app" },
   ],
 };
 
